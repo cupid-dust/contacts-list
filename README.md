@@ -1,6 +1,6 @@
 ## Environment
 
-You should have a `.env.local` without you won't be able to run this project:
+You should have a `.env.local` without these values you won't be able to run this project:
 
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
