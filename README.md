@@ -33,8 +33,11 @@
 
 ## Prisma
 
+- To migrate DB use:
+  - npx prisma migrate dev or yarn prisma migrate dev
+- To generate prisma use:
+  - npx prisma gengerate or yarn prisma generate
 - To open Prisma Studio, run these commands:
-
   - npx prisma studio or yarn prisma studio
 
 ## Next.js
