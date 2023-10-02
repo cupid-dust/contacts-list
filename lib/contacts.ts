@@ -3,9 +3,11 @@ import { singleFileUpload } from '@app/utils';
 import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
 
+const baseURL = 'http://localhost:3000';
+
 export async function getContacts() {
   try {
-    const res = await fetch(`${process.env.API_URL}/api/contacts`);
+    const res = await fetch(`${baseURL}/api/contacts`);
     return res.json();
   } catch (err) {
     console.log(err);
@@ -34,7 +36,7 @@ export async function createContact(_: any, formData: FormData, image: string) {
   });
 
   try {
-    await fetch(`${process.env.API_URL}/api/contacts`, {
+    await fetch(`${baseURL}/api/contacts`, {
       method: 'POST',
       body: JSON.stringify(data),
     });
@@ -56,7 +58,7 @@ export async function removeContact(_: any, formData: FormData) {
   });
 
   try {
-    await fetch(`${process.env.API_URL}/api/contacts/${data?.id}`, {
+    await fetch(`${baseURL}/api/contacts/${data?.id}`, {
       method: 'DELETE',
     });
 
@@ -101,9 +103,7 @@ export async function updateContact(_: any, formData: FormData, image: string) {
 
   try {
     await fetch(
-      `${process.env.API_URL}/api/contacts/${JSON.parse(
-        formData.get('id') as string
-      )}`,
+      `${baseURL}/api/contacts/${JSON.parse(formData.get('id') as string)}`,
       {
         method: 'PUT',
         body: JSON.stringify(data),
