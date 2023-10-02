@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer utilities {
+  .custom-gradient {
+    background: linear-gradient(180deg, rgba(40, 40, 40, 0.7) 0%, #282828 100%),
+      linear-gradient(180deg, #3c3c3c 0%, rgba(60, 60, 60, 0) 100%);
+  }
+
+  .hover-gradient {
+    background: linear-gradient(180deg, rgba(40, 40, 40, 0.7) 0%, #282828 100%),
+      linear-gradient(180deg, #3c3c3c 0%, rgba(60, 60, 60, 0.5) 100%),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.06),
+        rgba(255, 255, 255, 0.06)
+      );
+  }
+  .pressed-gradient {
+    background: linear-gradient(180deg, rgba(40, 40, 40, 0.7) 0%, #282828 100%),
+      linear-gradient(180deg, #3c3c3c 0%, rgba(60, 60, 60, 0) 100%),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.04),
+        rgba(255, 255, 255, 0.04)
+      );
+  }
+}
+
+.heading-one,
+h1 {
+  @apply text-4xl font-medium leading-11 font-primary text-white;
+}
+
+.heading-two,
+h2 {
+  @apply text-2xl font-medium leading-10 font-primary text-white;
+}
+
+.heading-three,
+h3 {
+  @apply text-base leading-6 font-secondary text-white tracking-1;
+}
+
+.text-lead {
+  @apply text-sm tracking-1 leading-5 font-secondary text-white;
+}
+
+.text-regular,
+p {
+  @apply text-xs leading-4 tracking-1  font-secondary;
+}
+
+.button-text {
+  @apply text-sm text-white font-secondary leading-4;
+}

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots — semantic 1`] = `
+<div
+  className="h-[88px] w-[88px] overflow-hidden rounded-full"
+>
+  <img
+    alt="User Avatar"
+    data-nimg="1"
+    decoding="async"
+    height={500}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimages%2FDefault.jpg&w=1080&q=75"
+    srcSet="/_next/image?url=%2Fimages%2FDefault.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2FDefault.jpg&w=1080&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    width={500}
+  />
+</div>
+`;
+
+exports[`snapshots — semantic 2`] = `
+<div
+  className="w-10 h-10 overflow-hidden rounded-full"
+>
+  <img
+    alt="User Avatar"
+    data-nimg="1"
+    decoding="async"
+    height={500}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimages%2FDefault.jpg&w=1080&q=75"
+    srcSet="/_next/image?url=%2Fimages%2FDefault.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2FDefault.jpg&w=1080&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    width={500}
+  />
+</div>
+`;
+
+exports[`snapshots — semantic 3`] = `
+<div
+  className="w-6 h-6 overflow-hidden rounded-full"
+>
+  <img
+    alt="User Avatar"
+    data-nimg="1"
+    decoding="async"
+    height={500}
+    loading="lazy"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="/_next/image?url=%2Fimages%2FDefault.jpg&w=1080&q=75"
+    srcSet="/_next/image?url=%2Fimages%2FDefault.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2FDefault.jpg&w=1080&q=75 2x"
+    style={
+      {
+        "color": "transparent",
+      }
+    }
+    width={500}
+  />
+</div>
+`;

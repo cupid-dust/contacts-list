@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots 1`] = `
+<h1
+  className="headline"
+>
+  Heading
+</h1>
+`;
+
+exports[`snapshots 2`] = `
+<h2
+  className="headline"
+>
+  Heading
+</h2>
+`;
+
+exports[`snapshots 3`] = `
+<h3
+  className="headline"
+>
+  Heading
+</h3>
+`;
+
+exports[`snapshots 4`] = `
+<h1
+  className="heading-one"
+>
+  Heading
+</h1>
+`;
+
+exports[`snapshots 5`] = `
+<h2
+  className="heading-one"
+>
+  Heading
+</h2>
+`;
+
+exports[`snapshots 6`] = `
+<h3
+  className="heading-one"
+>
+  Heading
+</h3>
+`;
+
+exports[`snapshots 7`] = `
+<h1
+  className="heading-two"
+>
+  Heading
+</h1>
+`;
+
+exports[`snapshots 8`] = `
+<h2
+  className="heading-two"
+>
+  Heading
+</h2>
+`;
+
+exports[`snapshots 9`] = `
+<h3
+  className="heading-two"
+>
+  Heading
+</h3>
+`;
+
+exports[`snapshots 10`] = `
+<h1
+  className="heading-three"
+>
+  Heading
+</h1>
+`;
+
+exports[`snapshots 11`] = `
+<h2
+  className="heading-three"
+>
+  Heading
+</h2>
+`;
+
+exports[`snapshots 12`] = `
+<h3
+  className="heading-three"
+>
+  Heading
+</h3>
+`;

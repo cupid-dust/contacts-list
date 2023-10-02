@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Glysa';
+    src: url('Glysa-Medium.eot');
+    src: url('Glysa-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Glysa-Medium.woff2') format('woff2'),
+        url('Glysa-Medium.woff') format('woff'),
+        url('Glysa-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
