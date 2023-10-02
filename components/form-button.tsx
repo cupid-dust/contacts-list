@@ -5,7 +5,6 @@ import { experimental_useFormStatus as useFormStatus } from 'react-dom';
 
 const FormButton = (): JSX.Element => {
   const { pending } = useFormStatus();
-
   return (
     <Button.Semantic
       disabled={pending}

@@ -42,9 +42,9 @@ export async function createContact(_: any, formData: FormData, image: string) {
     });
 
     revalidatePath('/');
-    return { message: 'Contact Created' };
+    return { message: 'Contact Created', error: false };
   } catch (err) {
-    return { message: 'Something went wrong' };
+    return { message: 'Something went wrong', error: true };
   }
 }
 
@@ -63,9 +63,9 @@ export async function removeContact(_: any, formData: FormData) {
     });
 
     revalidatePath('/');
-    return { message: 'Contact Deleted' };
+    return { message: 'Contact Deleted', error: false };
   } catch (err) {
-    return { message: 'Something went wrong' };
+    return { message: 'Something went wrong', error: true };
   }
 }
 
@@ -111,8 +111,8 @@ export async function updateContact(_: any, formData: FormData, image: string) {
     );
 
     revalidatePath('/');
-    return { message: 'Contact Updated' };
+    return { message: 'Contact Updated', error: false };
   } catch (err) {
-    return { message: 'Something went wrong' };
+    return { message: 'Something went wrong', error: true };
   }
 }

@@ -40,9 +40,10 @@ const Overlay = (): JSX.Element => {
   });
 
   useEffect(() => {
-    if (state?.message && !state.error) {
+    if (state?.message && !state.error && isOpen) {
       toggle();
       handleRemoveCover();
+      state.message = null;
     }
 
     if (contact?.image) {
@@ -54,8 +55,7 @@ const Overlay = (): JSX.Element => {
     };
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [state, contact?.image]);
-
+  }, [state?.message, contact?.image, isOpen]);
   return (
     <React.Fragment>
       <Transition appear show={isOpen} as={Fragment} data-testid="add-contact">
@@ -144,7 +144,7 @@ const Overlay = (): JSX.Element => {
                     />
                     <Input
                       label="Email address "
-                      type="text"
+                      type="email"
                       placeholder="jamie.wright@mail.com"
                       required
                       name="email"
